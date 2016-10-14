@@ -1,4 +1,4 @@
-# NetologyXP.TestFixture
+# NetologyXP.TestSmell
 * Практические занятия по UnitTesting (курс Нетологии http://netology.ru/programs/xp)
 * Лекция 3: Запахи в тестах
 
@@ -10,5 +10,5 @@
 * Непонятное имя
 * Асинхронность
 * Внешние зависимости
-* Сравнение строк и коллекций
+* Сравнение строк и коллекций с помощью DoesNotContains/Exists
 * Зависимые тесты
