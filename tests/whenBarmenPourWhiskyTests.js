@@ -33,8 +33,6 @@ suite('when barmen pour whisky', function () {
             let volumeInGlass = pour(whisky, iAskVolume);
             drink(volumeInGlass);
             assert.equal(iAskVolume, volumeInGlass);
-            assert.equal(false, isDrunked());
-            assert.equal(50, getTotallyDrunked());
             done();
         });
     });
