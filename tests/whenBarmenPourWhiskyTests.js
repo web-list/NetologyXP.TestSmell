@@ -10,20 +10,11 @@ import username from 'username'
 suite('when barmen pour whisky', function () {
     let whisky;
     setup(function (done) {
-        this.timeout(20000);
         sober();
-        download('http://www.rosa-obs.com/images/ccd/M31_karel_full.jpg', 'mycar.jpg', function () {
-            let car = getMyCar("mycar.jpg");
-            goToBar(car);
-            freeBarmen();
-            done();
-        });
-        fs.readFile('whisky.jpg', function (err, whiskyFile) {
-            if (err) {
-                throw err;
-            }
-            whisky = whiskyFile;
-        });
+        let car = {};
+        goToBar(car);
+        freeBarmen();
+        whisky = {};
         done();
     });
 
